@@ -9,81 +9,91 @@
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
     body { background-color: #f5f1e8; color: #4b2e2b; }
     header { background: #fffaf3; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-    header h1 { font-size: 22px; }
+    header h1 { font-size: 22px; font-weight: 700; }
     header a { text-decoration: none; color: #4b2e2b; margin-left: 30px; font-weight: 500; }
     .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 80px 60px; }
-    .hero-text { max-width: 500px; }
+    .hero-text { max-width: 520px; }
     .hero-text h2 { font-size: 42px; margin-bottom: 20px; }
     .hero-text p { margin-bottom: 30px; color: #6b4f4f; }
-    .btn { background: #6b4f4f; color: white; padding: 14px 28px; border: none; border-radius: 12px; cursor: pointer; font-size: 16px; }
+    .btn { background: #6b4f4f; color: white; padding: 14px 28px; border: none; border-radius: 12px; cursor: pointer; font-size: 15px; text-decoration: none; display: inline-block; }
     .btn:hover { background: #4b2e2b; }
-    .hero img { width: 400px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .hero img { width: 420px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
     .section { padding: 80px 60px; text-align: center; }
-    .features, .products { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px; }
-    .card { background: #fffaf3; padding: 30px; border-radius: 20px; width: 280px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+    .products { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px; }
+    .card { background: #fffaf3; padding: 25px; border-radius: 20px; width: 280px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
     .card img { width: 100%; border-radius: 15px; margin-bottom: 15px; }
+    .badge { background: #a67c52; color: white; font-size: 12px; padding: 4px 10px; border-radius: 20px; display: inline-block; margin-bottom: 10px; }
     footer { background: #4b2e2b; color: #f5f1e8; text-align: center; padding: 30px; }
     @media (max-width: 768px) {
       .hero { flex-direction: column; text-align: center; }
-      .hero img { margin-top: 40px; }
+      .hero img { margin-top: 40px; width: 100%; }
     }
   </style>
 </head>
 <body>
+
 <header>
   <h1>PT Berkah Usaha Jayatex</h1>
   <nav>
     <a href="#produk">Produk</a>
-    <a href="#tentang">Tentang</a>
     <a href="#kontak">Kontak</a>
   </nav>
 </header>
+
 <section class="hero">
   <div class="hero-text">
-    <h2>Nyaman Melangkah Dengan Kaos Kaki Premium</h2>
-    <p>Kaos kaki berbahan katun pilihan dengan desain minimalis warna cream dan coklat. Cocok untuk harian, kerja, hingga olahraga ringan.</p>
-    <button class="btn">Beli Sekarang</button>
+    <h2>Produsen Kaos Kaki Berkualitas</h2>
+    <p>Kaos kaki sekolah, muslimah, dan hitam formal dengan bahan nyaman dan tidak mudah melar.</p>
+    <a href="https://wa.me/62895331470950?text=Halo%20saya%20mau%20tanya%20produk%20kaos%20kaki%20Jayatex" class="btn" target="_blank">
+      Beli Sekarang
+    </a>
   </div>
-  <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82" alt="Kaos Kaki Premium">
+  <img src="sekolah-putih.png" alt="Kaos Kaki Sekolah">
 </section>
-<section class="section">
-  <h2>Keunggulan Produk</h2>
-  <div class="features">
-    <div class="card">
-      <h3>Bahan Premium</h3>
-      <p>Katun lembut yang menyerap keringat dan nyaman dipakai seharian.</p>
-    </div>
-    <div class="card">
-      <h3>Pengiriman Cepat</h3>
-      <p>Proses cepat dan aman sampai ke tangan Anda.</p>
-    </div>
-    <div class="card">
-      <h3>Garansi Kualitas</h3>
-      <p>Jahitan kuat dan warna tahan lama dengan kontrol kualitas ketat.</p>
-    </div>
-  </div>
-</section>
+
 <section class="section" id="produk">
-  <h2>Produk Terlaris</h2>
+  <h2>Produk Kami</h2>
+
   <div class="products">
+
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401d0" alt="Produk">
-      <h3>Classic Cream Series</h3>
-      <p>Desain minimalis warna cream dengan sentuhan coklat elegan.</p>
-      <p><strong>Rp29.000</strong></p>
-      <button class="btn">Tambah ke Keranjang</button>
+      <span class="badge">Best Seller</span>
+      <img src="sekolah-putih.png" alt="Kaos Kaki Sekolah Putih">
+      <h3>Kaos Kaki Sekolah Putih</h3>
+      <p>Standar sekolah, nyaman dipakai seharian.</p>
+      <p><strong>Rp18.000</strong></p>
+      <a href="https://wa.me/62895331470950?text=Halo%20saya%20mau%20order%20Kaos%20Kaki%20Sekolah%20Putih%20Rp18.000" class="btn" target="_blank">
+        Beli Sekarang
+      </a>
     </div>
+
+    <div class="card">
+      <img src="sekolah-hitam.png" alt="Kaos Kaki Hitam Formal">
+      <h3>Kaos Kaki Hitam Formal</h3>
+      <p>Cocok untuk sekolah, kerja, dan formal.</p>
+      <p><strong>Rp18.000</strong></p>
+      <a href="https://wa.me/62895331470950?text=Halo%20saya%20mau%20order%20Kaos%20Kaki%20Hitam%20Formal%20Rp18.000" class="btn" target="_blank">
+        Beli Sekarang
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="muslimah-panjang.png" alt="Kaos Kaki Muslimah Panjang">
+      <h3>Kaos Kaki Muslimah Panjang</h3>
+      <p>Panjang hingga betis, nyaman dan tidak menerawang.</p>
+      <p><strong>Rp25.000</strong></p>
+      <a href="https://wa.me/62895331470950?text=Halo%20saya%20mau%20order%20Kaos%20Kaki%20Muslimah%20Panjang%20Rp25.000" class="btn" target="_blank">
+        Beli Sekarang
+      </a>
+    </div>
+
   </div>
 </section>
-<section class="section" id="tentang">
-  <h2>Tentang Kami</h2>
-  <p style="max-width:600px;margin:20px auto;color:#6b4f4f;">
-    PT Berkah Usaha Jayatex hadir untuk memberikan kenyamanan terbaik melalui produk kaos kaki berkualitas tinggi dengan desain simpel dan elegan.
-  </p>
-</section>
+
 <footer id="kontak">
-  <p>© 2026 PT Berkah Usaha Jayatex. All Rights Reserved.</p>
-  <p>Email: hello@jayatex.id | Instagram: @jayatex.id</p>
+  <p>© 2026 PT Berkah Usaha Jayatex</p>
+  <p>WhatsApp: 0895331470950</p>
 </footer>
+
 </body>
 </html>
